@@ -25,6 +25,7 @@ public class ServiceDiscovery {
     private CuratorClient curatorClient;
 
     public ServiceDiscovery(String registryAddress) {
+        //初始化curatorClient
         this.curatorClient = new CuratorClient(registryAddress);
         discoveryService();
     }
